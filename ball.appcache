@@ -1,6 +1,6 @@
 CACHE MANIFEST
 # v1
-/ball.html
-/main.js
-/main.css
+/ball/ball.html
+/ball/main.js
+/ball/main.css
 http://zeptojs.com/zepto.min.js
