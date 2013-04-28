@@ -1,0 +1,1 @@
+[devicemotion](http://dev.w3.org/geo/api/spec-source-orientation.html#devicemotion) demo.  See it in action at [http://msbarry.github.io/ball/]
