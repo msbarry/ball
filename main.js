@@ -123,8 +123,8 @@ $(function () {
         y = $win.height() - 40;
       }
       if (x <= 40) {
-        x = 40 * BOUNCINESS;
-        mx = -mx;
+        x = 40;
+        mx = -mx * BOUNCINESS;
       }
       if (x >= $win.width() - 40) {
         mx = -mx * BOUNCINESS;
