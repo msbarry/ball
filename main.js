@@ -49,20 +49,16 @@ $(function () {
     $(document).on("touchmove", function (evt) {
       if (dragging) {
         var touches = evt.changedTouches;
-        for (var i = 0; i < touches.length; i++) {
-          var dx = touches[0].pageX - x;
-          var dy = touches[0].pageY - y;
-          if (Math.sqrt(dx * dx + dy * dy) < 40) {
-            var now = new Date().getTime();
-            var dt = (now - lastTouch) / 100;
-            mx = dx / dt;
-            my = dy / dt;
-            x = touches[0].pageX;
-            y = touches[0].pageY;
-            update();
-            lastTouch = now;
-          }
-        }
+        var dx = touches[0].pageX - x;
+        var dy = touches[0].pageY - y;
+        var now = new Date().getTime();
+        var dt = (now - lastTouch) / 100;
+        mx = dx / dt;
+        my = dy / dt;
+        x = touches[0].pageX;
+        y = touches[0].pageY;
+        update();
+        lastTouch = now;
       }
       return false;
     });
