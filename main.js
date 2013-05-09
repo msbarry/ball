@@ -58,6 +58,7 @@ $(function () {
         x = touches[0].pageX;
         y = touches[0].pageY;
         update();
+        $circle.attr("r", touches[0].force * 50);
         lastTouch = now;
       }
       return false;
