@@ -2,8 +2,8 @@
 $(function () {
   "use strict";
   // constants
-  var BOUNCINESS = 0.9;
-  var DRAG = 0.025;
+  var BOUNCINESS = 0.95;
+  var DRAG = 0.02;
 
   // zepto DOM wrappers
   var $circle = $('circle');
