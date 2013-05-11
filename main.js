@@ -4,7 +4,6 @@ $(function () {
   // constants
   var BOUNCINESS = 0.95;
   var DRAG = 0.02;
-  var PPM = 600;
 
   // zepto DOM wrappers
   var $circle = $('circle');
@@ -88,7 +87,7 @@ $(function () {
     var last = new Date().getTime();
     setInterval(function () {
       var now = new Date().getTime();
-      var dt = (now - last);
+      var dt = (now - last) / 100;
       // ignore when page is not displayed for a while
       if (now > last + 100) {
         last = now;
@@ -103,8 +102,8 @@ $(function () {
       ay -= DRAG * my;
 
       // add incremental update to speed from measured acceleration
-      mx += ax * dt * PPM;
-      my += ay * dt * PPM;
+      mx += ax * dt;
+      my += ay * dt;
 
       // update position from calculated speed
       x += mx * dt;
