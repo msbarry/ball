@@ -4,7 +4,7 @@ $(function () {
   // constants
   var BOUNCINESS = 0.95;
   var DRAG = 0.02;
-  var PPM = 6000;
+  var PPM = 600;
 
   // zepto DOM wrappers
   var $circle = $('circle');
