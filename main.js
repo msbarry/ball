@@ -52,7 +52,7 @@ $(function () {
         var dx = touches[0].pageX - x;
         var dy = touches[0].pageY - y;
         var now = new Date().getTime();
-        var dt = (now - lastTouch) / 100;
+        var dt = (now - lastTouch) / 50;
         mx = dx / dt;
         my = dy / dt;
         x = touches[0].pageX;
