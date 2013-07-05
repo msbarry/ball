@@ -154,8 +154,8 @@ $(function () {
           var touchMy = touchDy / dt;
           touch.mx = ((touch.mx || touchMx) * TOUCH_MOTION_DAMP) + ((1 - TOUCH_MOTION_DAMP) * touchMx);
           touch.my = ((touch.my || touchMy) * TOUCH_MOTION_DAMP) + ((1 - TOUCH_MOTION_DAMP) * touchMy);
-          adjustedMx -= touch.mx;
-          adjustedMy -= touch.my;
+          adjustedMx -= 2 * touch.mx;
+          adjustedMy -= 2 * touch.my;
         }
         touch.lastX = touch.touch.pageX;
         touch.lastY = touch.touch.pageY;
