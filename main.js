@@ -6,7 +6,7 @@ $(function () {
   var DRAG = 0.02;
   var BALL_RADIUS = 40;
   var FINGER_RADIUS = 20;
-  var TOUCH_MOTION_DAMP = 0.9;
+  var TOUCH_MOTION_DAMP = 0.6;
 
   // zepto DOM wrappers
   var $circle = $('circle');
